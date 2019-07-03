@@ -23,6 +23,12 @@ var input_ico_locate = document.getElementById("input_ico_locate");
 var input_btn_reading_log = document.getElementById("input_btn_reading_log");
 console.log(input_btn_reading_log);
 
+var input_btn_btn_primary_btn_lg = document.getElementById("btn btn-primary btn-lg");
+console.log(btn btn-primary btn-lg;
+
+
+
+//Example For Now
 var dummy_section = document.getElementById("dummy_section");
 
 input_btn_reading_log.addEventListener("click",function(){
