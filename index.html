@@ -7,15 +7,19 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/style%202.css">
+      <link rel="stylesheet" href="css/style_2.css">
+      
+         <!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Patrick+Hand" rel="stylesheet">
+      
+      <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Reading Challenge</title>
   </head>
   <body>
+      
       <center><h1>40 Book Challenge Log</h1></center>
-      
-      <!--Google Fonts-->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Patrick+Hand" rel="stylesheet">
-      
+
        <!-- BS4 navbar documentation: https://getbootstrap.com/docs/4.3/components/navbar/ -->
     <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
         <div class="d-flex flex-row align-items-stretch w-100 p-0 text-black" style="height: 40px;">
@@ -34,18 +38,24 @@
     </nav>
       
          <!-- CSS Grid -->
+      <center><div class="jumbotron">
+  <h1 class="display-4">Reading Rockets</h1>
+  <p class="lead">Log your reading minutes and a book summary for your 40 book challenge!</p>
+  <hr class="my-4">
+  <p>40 Book Challenge</p>
+  <a class="btn btn-primary btn-lg" href="pages/Summary" role="button">Enter Summary</a>
+          </div></center>
     <div id="section_content" class="container-fluid">
         <div id="view_landing" class="row d-none">
             <div class="col">
             </div>
         </div>
-        <div id="view_forecast" class="row" style="overflow-y: scroll;">
+        <div id="view_content" class="row" style="overflow-y: scroll;">
             <div class="col">
                 <nav class="mt-2">
                   <ul class="pagination justify-content-center">
-                    <li class="page-item"><a id="input_btn_now" class="page-link bg-dark text-white" href="#">Log Reading Minutes</a></li>
-                    <li class="page-item"><a id="input_btn_hourly" class="page-link bg-dark text-white" href="#">Book Summary</a></li>
-                    <li class="page-item"><a id="input_btn_daily" class="page-link bg-dark text-white" href="#">40 Book Challenge Chart</a></li>
+                    <li class="page-item"><button id="input_btn_reading_log" type="button" class="btn btn-dark">Reading Log</button></li>
+                    <li class="page-item"><a id="input_btn_40_book_challenge_chart" class="page-link bg-dark text-white" href="#">40 Book Challenge Chart</a></li>
                   </ul>
                 </nav>
                 <div style="height: 600px">
@@ -59,7 +69,15 @@
             </div>
         </div>
     </div>
- 
+      
+      <div id="dummy_section" class="container d-none">
+          <div class="row">
+            <div class="col">
+              This is a new section about reading log
+              </div>
+          </div>
+       
+      </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -71,5 +89,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <script src="js/variable.js"></script>
+      <script src="js/router.js"></script>
   </body>
 </html>
